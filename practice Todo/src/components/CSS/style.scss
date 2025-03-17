@@ -1,0 +1,106 @@
+.contentContainer {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    .addTodo {
+        min-height: 250px;
+        background-color: antiquewhite;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .formContainer {
+            min-width: 300px;
+            max-width: 700px;
+            padding: 20px;
+
+            form {
+
+                input,
+                select,
+                button {
+                    width: 100%;
+                    padding: 7px 10px;
+                    border-radius: 10px;
+                    border: 0;
+                    outline: 0;
+                    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                }
+
+                input {
+                    font-weight: 600;
+                    font-size: 12px;
+                }
+
+                select {
+                    font-weight: 600;
+                    font-size: 12px;
+
+                    option {
+                        font-weight: 600;
+                        font-size: 12px;
+                    }
+                }
+
+                button {
+                    background-color: #6a994e;
+                    font-weight: 700;
+                    padding: 10px;
+
+                }
+
+            }
+        }
+    }
+
+
+    .todoListing {
+        .topSection {
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: #fefae0;
+
+            .totalAmountSpend {
+                font-weight: 700;
+
+                .text {
+                    font-size: 15px;
+                }
+
+                .amount {
+                    color: red;
+                    font-weight: 800;
+                    font-size: 20px;
+                    letter-spacing: 2.5px;
+
+                    &::before {
+                        content: "Rs ";
+                        color: gray;
+                    }
+
+                    &::after {
+                        content: " /- ";
+                        color: gray;
+                    }
+                }
+            }
+        }
+
+        .expenseItem {
+            border-radius: 10px;
+            font-weight: 700;
+            font-size: 13px;
+            padding: 10px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+            .amount {
+                color: red;
+            }
+
+        }
+    }
+}
